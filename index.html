@@ -42,7 +42,7 @@
           <a class="js-scroll-trigger" href="#about">About</a>
         </li>
         <li>
-          <a class="js-scroll-trigger" href="#applications">Applications Built</a>
+          <a class="js-scroll-trigger" href="#applications">Portfolio</a>
         </li>
         <li>
           <a class="js-scroll-trigger" href="https://github.com/aqudsi" target="_blank">Github Page</a>
@@ -60,28 +60,164 @@
         <h1>Ahmer Qudsi</h1>
         <h3>Full Stack Web Developer</h3>
         <br>
-        <a href="#applications" class="btn btn-dark btn-lg js-scroll-trigger">Applications Built</a>
+        <a href="#applications" class="btn btn-dark btn-lg js-scroll-trigger">Portfolio</a>
       </div>
     </header>
 
     <!-- About -->
     <section id="about" class="about">
       <div class="container text-center">
-        <h2>About Me</h2>
+        <h2 style="color:darkblue">About Me</h2>
         <hr class="small">
-        <p class="lead">Certified Full Stack Web Developer who wants to work in a fast paced environment, building robust applications with friendly, motivated individuals. As a child, I was always fascinated with two things: technology and problem-solving and now I have the best of both worlds and have become proficient in both front-end (HTML5, CSS, Bootstrap, Javascript, JQuery, and React.js) and back-end development (Node.js, MySQL (Sequelize.js), MongoDB (Mongoose.js), Firebase, and Express.js) as well as templating engines such as handlebars JS.</p>
+        <p class="lead">Certified Full Stack Web Developer with a background in sales, who wants to work in a fast paced, cutting-edge development environment, building robust applications with friendly and motivated individuals. I love taking on new challenges, as I find that I learn and grow the most when I'm pressured to complete a challenging task. I've always enjoyed problem solving since I was a child, and the satisfaction of completing a difficult task that has taken a substantial amount of time and effort is more rewarding to me than anything else. That is why I decided to take a leap of faith, and transition from a sales career to one in Web Development. My end goal is to become a Full Stack Sofware Developer with the knowledge and skills to become a cornerstone in any development team.</p>
       </div>
       <!-- /.container -->
     </section>
 
-    </section> -->
+    </section>
 
     <!-- Callout -->
     <aside class="callout">
       <div class="text-vertical-center">
-        <h1 id="applications">Applications</h1>
+        <h1 id="applications">Portfolio</h1>
       </div>
     </aside>
+    <!-- Modals for displaying project details -->
+    
+    <div id="crypto_tracker" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel" style="color:darkblue"><strong>CryptoTracker</strong></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+          </div>
+          <div class="modal-body">
+            <strong>Description:</strong>
+              <p>This web application enables you to enter any cryptocurrency (Bitcoin, Ethereum, etc.) and track it's current value and rate of change, and display the data on a graph.</p>
+            <strong>List of features include:</strong>
+            <ul>
+              <li>A Live ticker of the current price of Bitcoin in any supported currency</li>
+              <li>A Currency to Bitcoin converter</li>
+              <li>Allowing you to set parameters that will tell you when to buy and sell (based on your input) and populates a graph to track the rate of change after you've "bought in".</li>
+            </ul>
+            <strong>My Contributions:</strong>
+            <ul>
+              <li>Utilized AJAX to create API calls to get cryptocurrency data</li>
+              <li>Utilized JQuery to receive data from user input</li>
+              <li>Combined and debugged the team's code</li>
+              <li>Created the ticker and the currency to Bitcoin converter</li>
+              <li>Utilized Canvas.js to populate and display the data on a graph</li>
+            </ul>
+            <strong>Technologies and Frameworks Used:</strong>
+                <p>HTML5, CSS3, JavaScript, JQuery, AJAX, and Canvas.js</p>
+                <p><a href="https://github.com/aqudsi/CryptoTracker" target="_blank"><strong>Source Code</strong></a></p>
+                <p><a href="https://aqudsi.github.io/CryptoTracker/" target="_blank"><strong>Live Application</strong></a></p>  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="link_inspector" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel" style="color:darkblue"><strong>Link Inspector</strong></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <strong>Description:</strong>
+              <p>This Node.js application enables you to enter any Bit.ly link to see the fully resolved URL (where the Bit.ly link leads to), as well as whether or not the link is malicious.</p>
+            <strong>List of features include:</strong>
+            <ul>
+              <li>Connected to a SQL database to allow instant access to previously scanned links</li>
+              <li>Uses VirusTotal's comprehensive virus scanner to determine if a link is malicious</li>
+              <li>Paired with a Chrome extension that gives you the application's full functionality in your browser by hovering over Bit.ly links.</li>
+            </ul>
+            <strong>My Contributions:</strong>
+            <ul>
+              <li>Utilized Sequelize.js to create SQL queries to store, update, and retrieve links.</li>
+              <li>Using Express.js and Node.js, developed a RESTful API for utlizing CRUD methods.</li>
+              <li>Created server-side code to retrieve the fully resolved URL of a link, and whether or not it's malicious</li>
+            </ul>
+            <strong>Technologies and Frameworks Used:</strong>
+              <p>HTML5, CSS3, JavaScript, JQuery, MySQL(Sequlize.js), RESTful Web Services, Node.js, and Express.js</p>
+              <p><a href="https://github.com/gatan45/LittleLinkInspector" target="_blank"><strong>Source Code</strong></a></p>
+              <p><a href="https://guarded-wave-66271.herokuapp.com/" target="_blank"><strong>Live Application</strong></a></p>    
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="friend_finder" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel" style="color:darkblue"><strong>Friend Finder</strong></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+          </div>
+          <div class="modal-body">
+            <strong>Description:</strong>
+              <p>This Node.js application is designed to match you with a friend based on your compatibility scores.</p>
+            <strong>List of features include:</strong>
+            <ul>
+              <li>Survey to determine your compatability score, with each question having a compatability value</li>
+              <li>Has a list of friends, in a custom API, to match with.</li>
+              <li>Utlizes an algorithm to match you with the person closest to your compatability score</li>
+            </ul>
+            <strong>Sole Developer:</strong>
+            <ul>
+              <li>Utilized a JSON-format API to store friends and their information </li>
+              <li>Utilized Node.js and Express.js to host the application on a server.</li>
+              <li>Designed and built the application from scratch</li>
+            </ul>
+            <strong>Technologies and Frameworks Used:</strong>
+              <p>HTML5, CSS3, JavaScript, JQuery, Node.js, Express.js</p>
+              <p><a href="https://github.com/aqudsi/friend-finder" target="_blank"><strong>Source Code</strong></a></p>
+              <p><a href="https://friend-finder-79483.herokuapp.com/" target="_blank"><strong>Live Application</strong></a></p>    
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="blogger_app" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel" style="color:darkblue"><strong>Blogger App</strong></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+          </div>
+          <div class="modal-body">
+            <strong>Description:</strong>
+              <p>This Node.js application is a blog that allows you to create an author, and post on the blog under that name.</p>
+            <strong>List of features include:</strong>
+            <ul>
+              <li>Connected to a SQL database to store authors and their associated posts</li>
+              <li>Checks to see if there are any authors first, and notifies you to create an author before allowing you to post</li>
+            </ul>
+            <strong>Sole Developer:</strong>
+            <ul>
+              <li>Utilized Sequelize.js to create SQL queries to create, update, delete, and retrieve authors and their associated posts.</li>
+              <li>Using Express.js and Node.js, developed a RESTful API for utlizing CRUD methods.</li>
+              <li>Designed and built the application from scratch</li>
+            </ul>
+            <strong>Technologies and Frameworks Used:</strong>
+              <p>HTML5, CSS3, JavaScript, JQuery, MySQL(Sequlize.js), Node.js, Express.js</p>
+              <p><a href="https://github.com/aqudsi/Blogger-App" target="_blank"><strong>Source Code</strong></a></p>
+              <p><a href="https://ahmers-blogger-app.herokuapp.com/blog" target="_blank"><strong>Live Application</strong></a></p>  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
@@ -91,38 +227,32 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="portfolio-item">
-                 <a href="https://github.com/aqudsi/CryptoTracker" target="_blank"><h4>Crypto Tracker</h4></a>    
+                 <div><h4 style="color:darkblue">Crypto Tracker</h4></div>    
                   <hr class="small">  
-                   <a href="https://aqudsi.github.io/CryptoTracker/" target="_blank">
-                    <img class="img-portfolio img-fluid img-thumbnail" src="img/bitcoin.jpg">
+                    <img class="img-portfolio img-fluid img-thumbnail" data-toggle="modal" data-target="#crypto_tracker" src="img/bitcoin.jpg">
                     <div class="info"></div>
                   </a>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="portfolio-item">
-                 <a href="https://github.com/gatan45/LittleLinkInspector" target="_blank"><h4>Link Inspector</h4></a>   
+                 <div><h4 style="color:darkblue">Link Inspector</h4></div>   
                   <hr class="small">
-                   <a href="https://guarded-wave-66271.herokuapp.com/" target="_blank">
-                    <img class="img-portfolio img-fluid img-thumbnail" src="img/malware.jpg">
-                  </a>
+                    <img class="img-portfolio img-fluid img-thumbnail" data-toggle="modal" data-target="#link_inspector" src="img/malware.jpg">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="portfolio-item">
-                 <a href="https://github.com/aqudsi/friend-finder" target="_blank"><h4>Friend Finder</h4></a>
+                 <div><h4 style="color:darkblue">Friend Finder</h4></div>
                   <hr class="small">  
-                   <a href="https://friend-finder-79483.herokuapp.com/" target="_blank">
-                    <img class="img-portfolio img-fluid img-thumbnail" src="img/friends.jpg">
-                  </a>
+                    <img class="img-portfolio img-fluid img-thumbnail" data-toggle="modal" data-target="#friend_finder" src="img/friends.jpg">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="portfolio-item">
-                 <a href="https://github.com/aqudsi/Blogger-App" target="_blank"><h4>Blogger App</h4></a> 
+                 <div><h4 style="color:darkblue">Blogger App</h4></div> 
                   <hr class="small">
-                   <a href="https://ahmers-blogger-app.herokuapp.com/" target="_blank">
-                    <img class="img-portfolio img-fluid img-thumbnail" src="img/blog.jpg">
+                    <img class="img-portfolio img-fluid img-thumbnail" data-toggle="modal" data-target="#blogger_app" src="img/blog.jpg">
                   </a>
                 </div>
               </div>
@@ -138,7 +268,7 @@
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary text-white">
+    <aside class="call-to-action">
       <div class="container text-center">
         <h3>Ahmer's Resume</h3>
         <a href="./docs/Ahmer_Qudsi_Resume.pdf" target="_blank" class="btn btn-lg btn-light">Click For Resume</a>
@@ -154,6 +284,7 @@
               <strong id="contact">Contact</strong>
               <hr class="small">
             </h4>
+            Ahmer Qudsi
             <p>Rockville, MD 20852</p>
             <ul class="list-unstyled">
               <li>
@@ -172,17 +303,17 @@
             <ul class="list-inline">
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/ahmer-qudsi-602370143/" target="_blank">
-                  <i class="fa fa-linkedin-square fa-fw fa-3x"></i>
+                  <i class="fa fa-linkedin-square fa-fw fa-3x" style="color:#0077B5"></i>
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://github.com/aqudsi" target="_blank">
-                  <i class="fa fa-github-square fa-fw fa-3x"></i>
+                  <i class="fa fa-github-square fa-fw fa-3x" style="color:black"></i>
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://stackoverflow.com/users/8173055/aqudsi" target="_blank">
-                  <i class="fa fa-stack-overflow fa-fw fa-3x"></i>
+                  <i class="fa fa-stack-overflow fa-fw fa-3x" style="color:#f48024"></i>
                 </a>
               </li>
             </ul>
